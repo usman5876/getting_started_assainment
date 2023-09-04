@@ -1,0 +1,11 @@
+{
+  "name": "assainment6",
+  "version": "1.0.0",
+  "description": "Comprehansive first assainment of geeting started exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "u.usman.dev",
+  "license": "ISC"
+}
