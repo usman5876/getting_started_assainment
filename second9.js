@@ -54,29 +54,56 @@ guests.forEach((name)=>{
 */
 // 16. More Guests: You just found a bigger dinner table, so now more space is available. Think
 // of three more guests to invite to dinner
-let guests = ["Hassan", "Awais", "Akbar", 'Shabaz'];
-let droper = guests.splice(2, 1, "Adeel");
+/*
+
+let guests = ["Hassan", "Awais", "Akbar",'Shabaz'];
+let droper = guests.splice(2,1,"Adeel");
 console.log(`${droper[0]} would not came to party tonight`);
-guests.forEach((name) => {
-    console.log(`${name}, please come for my party`);
+guests.forEach((name)=>{
+    console.log(`${name}, please come for my party`)
+
 });
 console.log("--------I have found a bigger table so, new guests will invite------- ");
-guests.splice(2, 0, "Zahid");
+guests.splice(2,0,"Zahid");
 guests.push("Qasim");
-guests.forEach((name) => {
-    console.log(`${name}, please come for my party`);
+guests.forEach((name)=>{
+    console.log(`${name}, please come for my party`)
+
 });
+
+
+
+
+
 // 17. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time
 //     for the dinner, and you have space for only two guests.
+
 console.log('---Due to unavailability of table, i can invite only two guests.---');
-for (let i = guests.length - 1; i > 1; i--) {
+for (let i = guests.length-1; i > 1; i--) {
     console.log(`Sorry! Due to unavaiabilty ${guests[i]} your name is removed from list`);
     guests.pop();
-}
-;
-guests.forEach((name) => {
+};
+guests.forEach((name)=>{
     console.log(name, 'you are still invited for party');
+    
 });
 guests.shift();
 guests.shift();
-console.log(guests);
+console.log(guests, 'List is empty now');
+*/
+// 18. Seeing the World: Think of at least five places in the world you’d like to visit
+//  Store the locations in a array. Make sure the array is not in alphabetical order.
+let fvrtPlaces = ['Nanga Parbat', 'Twins Tower', 'Sydney beach', 'Liberty Statue'];
+console.log(fvrtPlaces); //  Print your array in its original order.
+console.log([...fvrtPlaces].sort()); //Print your array in alphabetical order without modifying the actual list.
+console.log(fvrtPlaces); //Show that your array is still in its original order by printing it.
+console.log([...fvrtPlaces].sort().reverse()); // Print your array in reverse alphabetical order without changing the order of the original list.
+console.log(fvrtPlaces); //Show that your array is still in its original order by printing it again.
+fvrtPlaces.reverse();
+console.log(fvrtPlaces); //Reverse the order of your list. Print the array to show that its order has changed.
+fvrtPlaces.reverse();
+console.log(fvrtPlaces); //Reverse the order of your list again. Print the list to show it’s back to its original order.
+fvrtPlaces.sort();
+console.log(fvrtPlaces); //Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+fvrtPlaces.reverse();
+console.log(fvrtPlaces); //Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed
