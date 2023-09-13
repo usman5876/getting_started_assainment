@@ -108,9 +108,50 @@ function  make_great(){
 // as many items as the function call provides, and it should print a summary
 // of the sandwich that is being ordered. Call the function three times, using
 // a different number of arguments each time.
-function sandwichMake(items) {
-    items.forEach((name) => { console.log(name); });
+/*
+ function sandwichMake(items:string[]){
+    items.forEach((name)=>{console.log(name);});
+
+ }
+ sandwichMake(["Bread","Cheese"]);
+ sandwichMake(['bread','cheese', 'lettuce']);
+ sandwichMake([ "bread"]);
+
+ */
+// 45. Cars: Write a function that stores information about a car in a Object.
+// The function should always receive a manufacturer and a model name. It should
+// then accept an arbitrary number of keyword arguments. Call the function with
+// the required information and two other name-value pairs, such as a color or 
+// an optional feature. Print the Object that’s returned to make sure all the 
+// information was stored correctly.
+function test(a, b, ...args) {
+    console.log(args);
 }
-sandwichMake(["Bread", "Cheese"]);
-sandwichMake(['bread', 'cheese', 'lettuce']);
-sandwichMake(["bread"]);
+test('honda', 2, 34, 'huhu', 5);
+/*
+  let cars:{}={};
+  function carinput(manufac:string, model:number,color?:string,seats?:number){
+    if (typeof color === undefined && typeof seats === undefined){
+    cars = {
+        manufacturer : manufac ,
+        model : model
+        };
+    }
+    else if (typeof color === undefined){
+        cars = {
+            manufacturer : manufac,
+            model : model,
+            seats : seats
+            };
+    }
+    else if (typeof seats === undefined) {
+        cars = {
+            manufacturer : manufac ,
+            model : model,
+            color : color
+            };
+    }
+    return cars;
+  };
+console.log(carinput("honda",2016));
+  */ 

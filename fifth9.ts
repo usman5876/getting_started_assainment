@@ -165,4 +165,25 @@ function  make_great(){
  // information was stored correctly.
 
 
- 
+
+
+
+  let cars:{}={};
+  function carinput(manufac:string, model:number,...args:any){
+    if (typeof args === undefined){
+    cars = {
+        manufacturer : manufac ,
+        model : model
+        };
+    }
+    else {
+        cars = {
+            manufacturer : manufac,
+            model : model,
+            };
+       
+   
+    return cars;
+  };
+}
+console.log(carinput("honda",2016));
