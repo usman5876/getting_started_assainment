@@ -164,10 +164,6 @@ function  make_great(){
  // an optional feature. Print the Object that’s returned to make sure all the 
  // information was stored correctly.
 
-
-
-
-
   let cars:{}={};
   function carinput(manufac:string, model:number,...args:any){
     if (typeof args === undefined){

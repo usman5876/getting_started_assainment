@@ -124,34 +124,21 @@ function  make_great(){
 // the required information and two other name-value pairs, such as a color or 
 // an optional feature. Print the Object that’s returned to make sure all the 
 // information was stored correctly.
-function test(a, b, ...args) {
-    console.log(args);
-}
-test('honda', 2, 34, 'huhu', 5);
-/*
-  let cars:{}={};
-  function carinput(manufac:string, model:number,color?:string,seats?:number){
-    if (typeof color === undefined && typeof seats === undefined){
-    cars = {
-        manufacturer : manufac ,
-        model : model
+let cars = {};
+function carinput(manufac, model, ...args) {
+    if (typeof args === undefined) {
+        cars = {
+            manufacturer: manufac,
+            model: model
         };
     }
-    else if (typeof color === undefined){
+    else {
         cars = {
-            manufacturer : manufac,
-            model : model,
-            seats : seats
-            };
+            manufacturer: manufac,
+            model: model,
+        };
+        return cars;
     }
-    else if (typeof seats === undefined) {
-        cars = {
-            manufacturer : manufac ,
-            model : model,
-            color : color
-            };
-    }
-    return cars;
-  };
-console.log(carinput("honda",2016));
-  */ 
+    ;
+}
+console.log(carinput("honda", 2016));
